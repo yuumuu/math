@@ -1,0 +1,47 @@
+<html lang="en">
+	<head>
+		<title>Tugas Diskon Sederhana</title>
+		<link href="tugas-10-diskon.css" type="text/css" rel="stylesheet">
+	</head>
+	<body draggable="false">
+		<div class="body">
+			<div class="container">
+				<h1>Simple <span>Math</span><br>Discount</h1>
+				<form name="form">
+					<input type="number" name="price" placeholder="Price" onkeyup="purChased()" min="0"><br>
+					<div class="input">
+						<input type="number" name="discount" placeholder="Discount" min="0" max="100">
+						<label>%</label>
+					</div>
+					<div class="reload">
+						<input type="text" name="result" placeholder="Result" readonly>
+					</div>
+					<input type="number" name="payment" placeholder="Payment Amount" min="0" class="amount">
+					<input type="number" name="returns" placeholder="Return Amount" class="amounted" readonly>
+					<p class="nyari">*Nyari diskonan yaa?</p>
+					<div class="button-func">
+						<input type="button" name="check"  value="check-it" onclick="checkIt()" class="check-it-out">
+						<input type="button" name="clear"  value="Clear" onclick="clearLoad()" class="clear-out">
+					</div>
+				</form>
+			</div>
+			<marquee behavior="scroll" direction="left" scrollamount="13">
+				こんにちは、皆さん &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+この卒業式には Allah SWT のおかげで、私たちが元気で、集まってきます。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+十二年生の代表として、卒業のスピーチを申し上げます。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+三年前、純な顔 で　稚拙な子が、PPTQ Ibnu Abbas の高校に来ました。面白い友達と偉い先生型にあって、色々な良い事を学んで、とても感謝します。この三年間はずっとわすれません。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+学校で、たくさん活動をして、それで私たちが自信を強めて、勇敢な人になって、自立して、主体的な人になりました。イスラムの活動もして、信仰を強めて、信心家になりました。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+先生型に、今までに、色々な事を教えて、導いて、本当にありがとうございました。間違った事がたくさんして、申しわけありません。将来で私たちの結びつきが強くなること帰隊します。いつまでも、先生型の優しいさを忘れられません。ずっと、心にのこります。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+以上です。
+ありがとうございます。
+			</marquee>
+			<div class="ntah"></div>
+			<div class="nta"></div>
+			<div class="cr">
+				<a>&copy;</a><p>Copyright<sup>&copy;</sup> Haidaryum | 2022</p>
+			</div>
+		</div>
+		
+		<script src="tugas-10-diskon.js"></script>
+	</body>
+</html>

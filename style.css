@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: "Poppins", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body{
+	background: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80');
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+.body{
+	position: absolute;
+	background: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.body .cr{
+	position: absolute;
+	bottom: 30;
+	right: -265;
+	background-color: #1a1a1a;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+	transform: scale(1.3);
+	border: 4px solid rgba(0, 0, 0, 0.2);
+	transition: all .5s ease-in-out;
+	display: flex;
+}
+.body .cr:hover{
+	right: 0;
+	transform: scale(1);
+	border: 4px solid #1a1a1a;
+	transition: all .5s ease-in-out;
+}
+.cr p{
+	padding: 7px 40px 8px 7px;
+	color: white;
+	font-weight: 200;
+	font-size: 12px;
+	opacity: 0;
+	transition: all .5s ease-in-out;
+}
+.cr:hover p{
+	padding-left: 1px;
+	opacity: 1;
+	transition: all .5s ease-in-out;
+}
+.cr a{
+	font-size: 26px;
+	color: #9F8772;
+	font-weight: 700;
+	padding: 0 20px 0 10px;
+	opacity: 1;
+	transition: all .5s ease-in-out;
+}
+.cr:hover a{
+	opacity: 0;
+	padding: 0 10px 0 10px;
+	transition: all .5s ease-in-out;
+}
+div.container{
+	background-color: rgba(255, 255, 255, 0.65);
+	width: 400px;
+	height: 340px;
+	text-align: center;
+	padding: 90px 20px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 0px white, 0px 0px 9px black inset;
+	transition: all .3s ease-in-out;
+}
+div.container:hover{
+	transform: scale(1.05);
+	background-color: rgba(255, 255, 255, 0.8);
+	box-shadow: 0px 0px 9px white, 0px 0px 0px black inset;
+	transition: all .3s ease-in-out;
+}
+h1{
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 15px;
+	margin-top: -55px;
+	line-height: 50px;
+	letter-spacing: -0.03em; 
+	font-weight: 700;
+	font-size: 50px;
+	color: black;
+	text-shadow: 0px 0px 5px white;
+}
+h1 > span{
+	color: #876445;
+}
+.container input{
+	border: 0;
+	outline: 0;
+	background-color: #1a1a1a;
+	color: white;
+	border-radius: 20px;
+	padding: 4px 15px;
+	width: 300px;
+	margin: 7px 0;
+	height: 35px;
+	box-shadow: 0px 0px 4px 2px black inset;
+}
+form .amount,.amounted{
+	margin: 7px 0;
+}
+form .nyari{
+	margin-top: 5px;
+	font-size: 11px;
+	color: #9F8772;
+}
+input::placeholder{
+	color: lightgrey;
+}
+.input{
+	position: relative;
+	width: 300;
+	height: 35px;
+	left: 50px;
+	margin: 7px 0;
+}
+.input > input{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+}
+.input > input[type=button]{
+	position: absolute;
+	left: 230;
+	top: 0;
+	border: 0;
+	width: 75px;
+	height: 35px;
+	background: #9F8772;
+	padding: 0 20px 0 10px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	transition: all .3s ease;
+	box-shadow: 0px 0px 5px -2px black inset;
+	cursor: pointer;
+}
+.reload{
+	position: relative;
+	width: 300;
+	height: 35px;
+	left: 50px;
+	margin: 7px 0 25px 0;
+}
+.reload > input[type=button]{
+	position: absolute;
+	left: 230;
+	top: 0;
+	border: 0;
+	width: 75px;
+	height: 35px;
+	background: #9F8772;
+	padding: 0 20px 0 10px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	transition: all .3s ease;
+	box-shadow: 0px 0px 5px -2px black inset;
+	cursor: pointer;
+}
+input[type=button]:hover{
+	background: white;
+	color: #9F8772;
+	transition: all .5s ease;
+}
+.input > label{
+	position: absolute;
+	top: 5;
+	right: 10;
+	height: 35px;
+	color: white;
+}
+marquee{
+	position: absolute;
+	bottom: 45;
+	left: 0;
+	font-size: 12px;
+	color: whitesmoke;
+	opacity: .5;
+}
+.button-func{
+	position: relative;
+}
+.button-func > .check-it-out{
+	position: absolute;
+	left: 50;
+	top: 0;
+	border: 0;
+	width: 150px;
+	height: 35px;
+	background: #9F8772;
+	padding: 0 20px 0 10px;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	transition: all .3s ease;
+	box-shadow: 0px 0px 5px -2px black inset;
+	cursor: pointer;
+}
+.button-func > .clear-out{
+	position: absolute;
+	right: 50;
+	top: 0;
+	border: 0;
+	width: 150px;
+	height: 35px;
+	background: #9F8772;
+	padding: 0 20px 0 10px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	transition: all .3s ease;
+	box-shadow: 0px 0px 5px -2px black inset;
+	cursor: pointer;
+}
+.ntah{
+	position: absolute;
+	background: white;
+	bottom: 40;
+	left: -30;
+	width: 70px;
+	height: 30px;
+	transform: skewX(20deg);
+}
+.nta{
+	position: absolute;
+	background: #9F8772;
+	bottom: 40;
+	left: -35;
+	width: 70px;
+	height: 30px;
+	transform: skewX(20deg);
+}
