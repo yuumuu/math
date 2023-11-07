@@ -7,25 +7,20 @@
 		<div class="body">
 			<div class="container">
 				<h1>Simple <span>Math</span><br>Discount</h1>
-				<form name="form" id="form" style="color: #fff;">
+				<form name="form" id="form">
 					<label style="">Harga Awal</label>
 					<input type="number" name="price" placeholder="Price" onkeyup="purChased()" min="0"><br>
 					
-					<label style="">Diskon <small>(dalam persen)</small></label>
 					<div class="input">
 						<input type="number" name="discount" placeholder="Discount" min="0" max="100">
 						<label>%</label>
 					</div>
 					
-					<label style="">Harga Akhir</label>
 					<div class="reload">
 						<input type="text" name="result" placeholder="Result" readonly>
 					</div>
 					
-					<label style="">Biaya <small>(yang dibayarkan)</small></label>
 					<input type="number" name="payment" placeholder="Payment Amount" min="0" class="amount">
-					
-					<label style="">Kembalian</label>
 					<input type="number" name="returns" placeholder="Return Amount" class="amounted" readonly>
 					<p class="nyari">*Nyari diskonan yaa?</p>
 					<div class="button-func">
